@@ -4,10 +4,9 @@ using System.Composition.Hosting;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Vouzamo.Contextual.Common.Interfaces;
-using Vouzamo.Contextual.Core;
-using Vouzamo.Contextual.WebApp.Extensions;
+using Vouzamo.Contextual.Core.Extensions;
 
-namespace Vouzamo.Contextual.WebApp.Processors
+namespace Vouzamo.Contextual.Core.Processors
 {
     public class ContextProcessor : IContextProcessor
     {

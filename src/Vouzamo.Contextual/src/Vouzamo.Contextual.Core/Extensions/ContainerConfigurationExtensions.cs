@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Loader;
 
-namespace Vouzamo.Contextual.WebApp.Extensions
+namespace Vouzamo.Contextual.Core.Extensions
 {
     public static class ContainerConfigurationExtensions
     {

@@ -3,12 +3,17 @@
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
-    "Vouzamo.Contextual.Common": "1.0.0-*"
+    "Vouzamo.Contextual.Common": "1.0.0-*",
+    "Microsoft.Composition": "1.0.30",
+    "System.Runtime.Loader": "4.0.0"
   },
 
   "frameworks": {
     "netstandard1.6": {
-      "imports": "dnxcore50"
+      "imports": [
+        "dotnet5.6",
+        "portable-net45+win8"
+      ]
     }
   }
 }
