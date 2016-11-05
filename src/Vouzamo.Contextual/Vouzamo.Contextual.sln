@@ -14,6 +14,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Vouzamo.Contextual.Common",
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Vouzamo.Contextual.Core", "src\Vouzamo.Contextual.Core\Vouzamo.Contextual.Core.xproj", "{B61091D2-A217-4935-93E0-9FCAF938A8C9}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Vouzamo.Contextual.WebApp", "src\Vouzamo.Contextual.WebApp\Vouzamo.Contextual.WebApp.xproj", "{50035895-892B-4BBF-8CD9-48A738A72E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{B61091D2-A217-4935-93E0-9FCAF938A8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B61091D2-A217-4935-93E0-9FCAF938A8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B61091D2-A217-4935-93E0-9FCAF938A8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50035895-892B-4BBF-8CD9-48A738A72E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50035895-892B-4BBF-8CD9-48A738A72E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50035895-892B-4BBF-8CD9-48A738A72E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50035895-892B-4BBF-8CD9-48A738A72E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +41,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D0EFD759-1203-4EAA-9DF6-3AD396AD4FEE} = {4B5BB280-3DB5-4AD1-89E2-205B60F2BB53}
 		{B61091D2-A217-4935-93E0-9FCAF938A8C9} = {4B5BB280-3DB5-4AD1-89E2-205B60F2BB53}
+		{50035895-892B-4BBF-8CD9-48A738A72E71} = {4B5BB280-3DB5-4AD1-89E2-205B60F2BB53}
 	EndGlobalSection
 EndGlobal
