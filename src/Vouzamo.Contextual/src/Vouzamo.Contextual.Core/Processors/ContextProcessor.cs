@@ -29,19 +29,19 @@ namespace Vouzamo.Contextual.Core.Processors
                 .Export<IContextResolver<IWho>>()
                 .Shared();
 
-            conventions.ForTypesDerivedFrom<IContextResolver<IWho>>()
+            conventions.ForTypesDerivedFrom<IContextResolver<IWhat>>()
                 .Export<IContextResolver<IWhat>>()
                 .Shared();
 
-            conventions.ForTypesDerivedFrom<IContextResolver<IWho>>()
+            conventions.ForTypesDerivedFrom<IContextResolver<IWhere>>()
                 .Export<IContextResolver<IWhere>>()
                 .Shared();
 
-            conventions.ForTypesDerivedFrom<IContextResolver<IWho>>()
+            conventions.ForTypesDerivedFrom<IContextResolver<IWhen>>()
                 .Export<IContextResolver<IWhen>>()
                 .Shared();
 
-            conventions.ForTypesDerivedFrom<IContextResolver<IWho>>()
+            conventions.ForTypesDerivedFrom<IContextResolver<IWhy>>()
                 .Export<IContextResolver<IWhy>>()
                 .Shared();
 
