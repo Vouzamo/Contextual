@@ -19,35 +19,19 @@ namespace Vouzamo.Contextual.Core.Providers
         {
             var conventions = new ConventionBuilder();
 
-            conventions.ForTypesDerivedFrom<IContextResolver<IWho>>()
-                .Export<IContextResolver<IWho>>()
-                .Shared();
-
-            conventions.ForTypesDerivedFrom<IContextResolver<IWhat>>()
-                .Export<IContextResolver<IWhat>>()
-                .Shared();
-
-            conventions.ForTypesDerivedFrom<IContextResolver<IWhere>>()
-                .Export<IContextResolver<IWhere>>()
-                .Shared();
-
-            conventions.ForTypesDerivedFrom<IContextResolver<IWhen>>()
-                .Export<IContextResolver<IWhen>>()
-                .Shared();
-
-            conventions.ForTypesDerivedFrom<IContextResolver<IWhy>>()
-                .Export<IContextResolver<IWhy>>()
+            conventions.ForTypesDerivedFrom<IContextResolver>()
+                .Export<IContextResolver>()
                 .Shared();
 
             Configuration = new ContainerConfiguration()
                 .WithAssembliesInPath(path, conventions);
         }
 
-        public IEnumerable<IContextResolver<T>> LoadResolvers<T>() where T : IContextPillar
+        public IEnumerable<IContextResolver> LoadResolvers()
         {
             using (var container = Configuration.CreateContainer())
             {
-                return container.GetExports<IContextResolver<T>>();
+                return container.GetExports<IContextResolver>();
             }
         }
     }

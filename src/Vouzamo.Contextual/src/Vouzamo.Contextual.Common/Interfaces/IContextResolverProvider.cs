@@ -4,6 +4,6 @@ namespace Vouzamo.Contextual.Common.Interfaces
 {
     public interface IContextResolverProvider
     {
-        IEnumerable<IContextResolver<T>> LoadResolvers<T>() where T : IContextPillar;
+        IEnumerable<IContextResolver> LoadResolvers();
     }
 }

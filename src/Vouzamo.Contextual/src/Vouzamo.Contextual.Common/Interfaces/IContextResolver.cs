@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace Vouzamo.Contextual.Common.Interfaces
 {
-    public interface IContextResolver<out T> where T : IContextPillar
+    public interface IContextResolver
     {
-        T Resolve(HttpRequest request);
+        Task<IContext> Resolve(HttpContext httpContext);
     }
 }

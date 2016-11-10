@@ -6,6 +6,7 @@ namespace Vouzamo.Contextual.Common.Interfaces
     public interface IItem
     {
         Guid Id { get; }
+        string CustomData { get; }
     }
 
     public interface IPage : IItem
